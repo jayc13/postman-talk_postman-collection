@@ -1,0 +1,23 @@
+{
+  "name": "postman-talk_postman-collection",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-dev": "newman run  ./collections/*.json -e environments/Development.postman_environment.json -r cli,junit --reporter-junit-export report.xml",
+    "test-prod": "newman run  ./collections/*.json -e environments/Production.postman_environment.json -r cli,junit --reporter-junit-export report.xml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tech-talks-cj13/postman-talk_postman-collection.git"
+  },
+  "author": "Javier Hernán Caballero García <javierhernan@caballerogarcia.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tech-talks-cj13/postman-talk_postman-collection/issues"
+  },
+  "homepage": "https://github.com/tech-talks-cj13/postman-talk_postman-collection#readme",
+  "dependencies": {
+    "newman": "^4.1.0"
+  }
+}
